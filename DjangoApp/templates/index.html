@@ -1,3 +1,7 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
 <h1>Java Class Cohort</h1>
 
  {% for items in members %}
@@ -7,3 +11,4 @@
   Password: {{ items.passwd }}<br>
   Age   :{{ items.age }}<br><hr>
 {% endfor %}
+{% endblock content %}

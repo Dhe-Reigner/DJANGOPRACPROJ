@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+<h1>Join Us Today</h1>
+<form method="POST" action="{% url 'join' %} >
+{% csrf_token %}
+ <div class="mb-3">
+
+    <input type="text" class="form-control"  aria-describedby="emailHelp" placeholder="First Name" name="fname">
+   
+  </div>
+ <div class="mb-3">
+
+    <input type="text" class="form-control" aria-describedby="emailHelp" placeholder="Last Name" name="lname">
+   
+  </div>
+  <div class="mb-3">
+
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address" name="email">
+   
+  </div>
+  <div class="mb-3">
+
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="passwd">
+  </div>
+   <div class="mb-3">
+
+    <input type="" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Age" name="age">
+   
+  </div>
+  <button type="submit" class="btn btn-secondary">Sign Up</button>
+</form>
+
+{% endblock content %}

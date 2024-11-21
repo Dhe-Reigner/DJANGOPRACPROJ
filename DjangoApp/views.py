@@ -6,3 +6,6 @@ def index(request):
     return render (request, 'index.html', {
         'members':all_members
     })
+    
+def join(request):
+    return render(request, 'join.html',{})
