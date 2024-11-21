@@ -1,1 +1,9 @@
 <h1>Java Class Cohort</h1>
+
+ {% for items in members %}
+
+  Name : {{ items.fname }} {{ items.lname }} <br>
+  Email :{{ items.email}}<br>
+  Password: {{ items.passwd }}<br>
+  Age   :{{ items.age }}<br><hr>
+{% endfor %}
